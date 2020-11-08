@@ -1,0 +1,160 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://scripts/Menu.gd" type="Script" id=1]
+
+[sub_resource type="DynamicFontData" id=1]
+font_path = "res://Assets/fonts/Planes_ValMore.ttf"
+
+[sub_resource type="DynamicFont" id=2]
+size = 36
+font_data = SubResource( 1 )
+
+[node name="Control" type="Control"]
+anchor_right = 0.781
+anchor_bottom = 0.75
+margin_right = 0.256042
+margin_bottom = -6.10352e-05
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridH" type="HBoxContainer" parent="."]
+margin_right = 800.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 6
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="GridV1" type="VBoxContainer" parent="GridH"]
+margin_right = 262.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 6
+
+[node name="Button1" type="Button" parent="GridH/GridV1"]
+margin_right = 262.0
+margin_bottom = 145.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Stat Points"
+clip_text = true
+
+[node name="Button2" type="Button" parent="GridH/GridV1"]
+margin_top = 151.0
+margin_right = 262.0
+margin_bottom = 297.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Sword"
+
+[node name="Button3" type="Button" parent="GridH/GridV1"]
+margin_top = 303.0
+margin_right = 262.0
+margin_bottom = 448.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Shield"
+
+[node name="Button4" type="Button" parent="GridH/GridV1"]
+margin_top = 454.0
+margin_right = 262.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Pearl"
+
+[node name="GridV2" type="VBoxContainer" parent="GridH"]
+margin_left = 268.0
+margin_right = 531.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 6
+
+[node name="Button1" type="Button" parent="GridH/GridV2"]
+margin_right = 263.0
+margin_bottom = 145.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Helmet"
+
+[node name="Button2" type="Button" parent="GridH/GridV2"]
+margin_top = 151.0
+margin_right = 263.0
+margin_bottom = 297.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Breastplate"
+
+[node name="Button3" type="Button" parent="GridH/GridV2"]
+margin_top = 303.0
+margin_right = 263.0
+margin_bottom = 448.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Pants"
+
+[node name="Button4" type="Button" parent="GridH/GridV2"]
+margin_top = 454.0
+margin_right = 263.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Shoes"
+
+[node name="GridV3" type="VBoxContainer" parent="GridH"]
+margin_left = 537.0
+margin_right = 800.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_constants/separation = 6
+
+[node name="Button1" type="Button" parent="GridH/GridV3"]
+margin_right = 263.0
+margin_bottom = 145.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Necklace"
+
+[node name="Button2" type="Button" parent="GridH/GridV3"]
+margin_top = 151.0
+margin_right = 263.0
+margin_bottom = 297.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Bracelet"
+
+[node name="Button3" type="Button" parent="GridH/GridV3"]
+margin_top = 303.0
+margin_right = 263.0
+margin_bottom = 448.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Gloves"
+
+[node name="Button4" type="Button" parent="GridH/GridV3"]
+margin_top = 454.0
+margin_right = 263.0
+margin_bottom = 600.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+custom_fonts/font = SubResource( 2 )
+text = "Exit Menu"

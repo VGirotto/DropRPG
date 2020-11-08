@@ -1,0 +1,323 @@
+[gd_scene load_steps=51 format=2]
+
+[ext_resource path="res://Assets/enemies/bosses/viking/Viking.png" type="Texture" id=1]
+[ext_resource path="res://scripts/boss.gd" type="Script" id=2]
+[ext_resource path="res://Assets/enemies/bosses/viking/Viking_death.png" type="Texture" id=3]
+[ext_resource path="res://Assets/enemies/bosses/viking/Viking_attack4.png" type="Texture" id=4]
+[ext_resource path="res://Assets/enemies/bosses/viking/Viking_attack1.png" type="Texture" id=5]
+[ext_resource path="res://Assets/enemies/bosses/viking/Viking_hurt.png" type="Texture" id=6]
+[ext_resource path="res://Assets/enemies/bosses/manticore/Manticore_attack3.png" type="Texture" id=7]
+[ext_resource path="res://Cenas/FloatyText.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/enemies/bosses/manticore/Manticore_death.png" type="Texture" id=9]
+[ext_resource path="res://Assets/enemies/bosses/manticore/Manticore_attack1.png" type="Texture" id=10]
+[ext_resource path="res://Assets/enemies/bosses/manticore/Manticore.png" type="Texture" id=11]
+[ext_resource path="res://Assets/enemies/bosses/manticore/Manticore_hurt.png" type="Texture" id=12]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=2]
+flags = 4
+atlas = ExtResource( 6 )
+region = Rect2( 72, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=3]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=4]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=5]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 72, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=6]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 144, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=7]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 216, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=8]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 288, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=9]
+flags = 4
+atlas = ExtResource( 4 )
+region = Rect2( 360, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=10]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=11]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 72, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=12]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 144, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=13]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 216, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=14]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 288, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=15]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 360, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=16]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=17]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 72, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=18]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 144, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=19]
+flags = 4
+atlas = ExtResource( 3 )
+region = Rect2( 216, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=20]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=21]
+flags = 4
+atlas = ExtResource( 12 )
+region = Rect2( 72, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=22]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=23]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 72, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=24]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 144, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=25]
+flags = 4
+atlas = ExtResource( 10 )
+region = Rect2( 216, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=26]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 72, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 144, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 7 )
+region = Rect2( 216, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 11 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 0, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 72, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 144, 0, 72, 72 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 9 )
+region = Rect2( 216, 0, 72, 72 )
+
+[sub_resource type="SpriteFrames" id=35]
+animations = [ {
+"frames": [ SubResource( 1 ), SubResource( 2 ) ],
+"loop": false,
+"name": "viking_hurt",
+"speed": 7.0
+}, {
+"frames": [ SubResource( 3 ) ],
+"loop": true,
+"name": "viking_idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ) ],
+"loop": true,
+"name": "viking_battle2",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 10 ), SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ) ],
+"loop": true,
+"name": "viking_battle1",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 16 ), SubResource( 17 ), SubResource( 18 ), SubResource( 19 ) ],
+"loop": false,
+"name": "viking_dead",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 20 ), SubResource( 21 ) ],
+"loop": true,
+"name": "manticore_hurt",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ) ],
+"loop": true,
+"name": "manticore_battle1",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 26 ), SubResource( 27 ), SubResource( 28 ), SubResource( 29 ) ],
+"loop": true,
+"name": "manticore_battle2",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 30 ) ],
+"loop": true,
+"name": "manticore_idle",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
+"loop": false,
+"name": "manticore_dead",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=36]
+extents = Vector2( 57.4692, 8.694 )
+
+[sub_resource type="DynamicFontData" id=37]
+font_path = "res://Assets/fonts/Planes_ValMore.ttf"
+
+[sub_resource type="DynamicFont" id=38]
+size = 32
+font_data = SubResource( 37 )
+
+[node name="boss" type="KinematicBody2D"]
+script = ExtResource( 2 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( -72.0985, -82.7195 )
+scale = Vector2( 5, 5 )
+frames = SubResource( 35 )
+animation = "manticore_battle1"
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -1.41418, 63.6397 )
+shape = SubResource( 36 )
+
+[node name="Stats" type="VBoxContainer" parent="."]
+margin_left = -126.508
+margin_top = 126.508
+margin_right = 97.4923
+margin_bottom = 398.508
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="HP" type="Label" parent="Stats"]
+margin_right = 224.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 38 )
+text = "HP:"
+
+[node name="Atk" type="Label" parent="Stats"]
+margin_top = 36.0
+margin_right = 224.0
+margin_bottom = 68.0
+custom_fonts/font = SubResource( 38 )
+text = "Attack:"
+
+[node name="Def" type="Label" parent="Stats"]
+margin_top = 72.0
+margin_right = 224.0
+margin_bottom = 104.0
+custom_fonts/font = SubResource( 38 )
+text = "Defense:"
+
+[node name="Agi" type="Label" parent="Stats"]
+margin_top = 108.0
+margin_right = 224.0
+margin_bottom = 140.0
+custom_fonts/font = SubResource( 38 )
+text = "Agility:"
+
+[node name="Cri" type="Label" parent="Stats"]
+margin_top = 144.0
+margin_right = 224.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 38 )
+text = "Critical:"
+
+[node name="Wis" type="Label" parent="Stats"]
+margin_top = 180.0
+margin_right = 224.0
+margin_bottom = 212.0
+custom_fonts/font = SubResource( 38 )
+text = "Wisdom:"
+
+[node name="Res Cri" type="Label" parent="Stats"]
+margin_top = 216.0
+margin_right = 224.0
+margin_bottom = 248.0
+custom_fonts/font = SubResource( 38 )
+text = "Critical Resis:"
+
+[node name="FloatyText" parent="." instance=ExtResource( 8 )]
+
+[node name="FloatyText2" parent="." instance=ExtResource( 8 )]
+position = Vector2( 15.817, -119.49 )

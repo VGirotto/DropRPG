@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/Stéphane F. - Music for Roleplaying - 01 - In the Bushes.ogg-01a22fd0e32d728ba79fcfe3f6943da0.oggstr"
+
+[deps]
+
+source_file="res://Assets/songs/Stéphane F. - Music for Roleplaying - 01 - In the Bushes.ogg"
+dest_files=[ "res://.import/Stéphane F. - Music for Roleplaying - 01 - In the Bushes.ogg-01a22fd0e32d728ba79fcfe3f6943da0.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

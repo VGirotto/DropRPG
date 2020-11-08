@@ -1,0 +1,343 @@
+[gd_scene load_steps=33 format=2]
+
+[ext_resource path="res://Assets/tilesets/wall_1.png" type="Texture" id=1]
+[ext_resource path="res://Assets/tilesets/wall_6.png" type="Texture" id=2]
+[ext_resource path="res://Assets/tilesets/wall_5.png" type="Texture" id=3]
+[ext_resource path="res://Cenas/Player/player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Assets/tilesets/land.png" type="Texture" id=5]
+[ext_resource path="res://Assets/tilesets/bricks_1.png" type="Texture" id=6]
+[ext_resource path="res://Cenas/enemies/boss.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Cenas/dialog.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Assets/tilesets/wall_3.png" type="Texture" id=9]
+[ext_resource path="res://scripts/main.gd" type="Script" id=10]
+[ext_resource path="res://Cenas/enemies/enemy.tscn" type="PackedScene" id=11]
+[ext_resource path="res://Cenas/dialogBattle.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Cenas/Menu.tscn" type="PackedScene" id=13]
+[ext_resource path="res://Cenas/Equip.tscn" type="PackedScene" id=14]
+[ext_resource path="res://Cenas/stats.tscn" type="PackedScene" id=15]
+[ext_resource path="res://scripts/Menu/stats.gd" type="Script" id=16]
+[ext_resource path="res://Cenas/delete.tscn" type="PackedScene" id=17]
+[ext_resource path="res://scripts/Menu/delete.gd" type="Script" id=18]
+[ext_resource path="res://Assets/tilesets/desert/land_14.png" type="Texture" id=19]
+[ext_resource path="res://Assets/tilesets/desert/greenery_6.png" type="Texture" id=20]
+[ext_resource path="res://Assets/tilesets/desert/land_13.png" type="Texture" id=21]
+[ext_resource path="res://Assets/tilesets/desert/land_17.png" type="Texture" id=22]
+[ext_resource path="res://Assets/tilesets/desert/bg.png" type="Texture" id=23]
+[ext_resource path="res://Assets/tilesets/desert/greenery_1.png" type="Texture" id=24]
+[ext_resource path="res://Assets/songs/Stéphane F. - Music for Roleplaying - 01 - In the Bushes.ogg" type="AudioStream" id=25]
+[ext_resource path="res://Assets/songs/Stéphane F. - Music for Roleplaying - 05 - Arduinna.ogg" type="AudioStream" id=26]
+[ext_resource path="res://Assets/songs/sword-slash-attack-by-qubodup.ogg" type="AudioStream" id=27]
+
+[sub_resource type="TileSet" id=1]
+1/name = "wall_6.png 1"
+1/texture = ExtResource( 2 )
+1/tex_offset = Vector2( 0, 0 )
+1/modulate = Color( 1, 1, 1, 1 )
+1/region = Rect2( 0, 0, 256, 256 )
+1/tile_mode = 0
+1/occluder_offset = Vector2( 0, 0 )
+1/navigation_offset = Vector2( 0, 0 )
+1/shape_offset = Vector2( 0, 0 )
+1/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+1/shape_one_way = false
+1/shape_one_way_margin = 0.0
+1/shapes = [  ]
+1/z_index = 1
+2/name = "wall_5.png 2"
+2/texture = ExtResource( 3 )
+2/tex_offset = Vector2( 0, 0 )
+2/modulate = Color( 1, 1, 1, 1 )
+2/region = Rect2( 0, 0, 256, 256 )
+2/tile_mode = 0
+2/occluder_offset = Vector2( 0, 0 )
+2/navigation_offset = Vector2( 0, 0 )
+2/shape_offset = Vector2( 0, 0 )
+2/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+2/shape_one_way = false
+2/shape_one_way_margin = 0.0
+2/shapes = [  ]
+2/z_index = 1
+4/name = "wall_1.png 4"
+4/texture = ExtResource( 1 )
+4/tex_offset = Vector2( 0, 0 )
+4/modulate = Color( 1, 1, 1, 1 )
+4/region = Rect2( 0, 0, 256, 256 )
+4/tile_mode = 0
+4/occluder_offset = Vector2( 0, 0 )
+4/navigation_offset = Vector2( 0, 0 )
+4/shape_offset = Vector2( 0, 0 )
+4/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+4/shape_one_way = false
+4/shape_one_way_margin = 0.0
+4/shapes = [  ]
+4/z_index = 1
+5/name = "land.png 5"
+5/texture = ExtResource( 5 )
+5/tex_offset = Vector2( 0, 0 )
+5/modulate = Color( 1, 1, 1, 1 )
+5/region = Rect2( 0, 0, 256, 256 )
+5/tile_mode = 0
+5/occluder_offset = Vector2( 0, 0 )
+5/navigation_offset = Vector2( 0, 0 )
+5/shape_offset = Vector2( 0, 0 )
+5/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+5/shape_one_way = false
+5/shape_one_way_margin = 0.0
+5/shapes = [  ]
+5/z_index = 0
+6/name = "bricks_1.png 6"
+6/texture = ExtResource( 6 )
+6/tex_offset = Vector2( 0, 0 )
+6/modulate = Color( 1, 1, 1, 1 )
+6/region = Rect2( 0, 0, 240, 168 )
+6/tile_mode = 0
+6/occluder_offset = Vector2( 0, 0 )
+6/navigation_offset = Vector2( 0, 0 )
+6/shape_offset = Vector2( 0, 0 )
+6/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+6/shape_one_way = false
+6/shape_one_way_margin = 0.0
+6/shapes = [  ]
+6/z_index = 2
+7/name = "wall_3.png 7"
+7/texture = ExtResource( 9 )
+7/tex_offset = Vector2( 0, 0 )
+7/modulate = Color( 1, 1, 1, 1 )
+7/region = Rect2( 0, 0, 64, 256 )
+7/tile_mode = 0
+7/occluder_offset = Vector2( 0, 0 )
+7/navigation_offset = Vector2( 0, 0 )
+7/shape_offset = Vector2( 0, 0 )
+7/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+7/shape_one_way = false
+7/shape_one_way_margin = 0.0
+7/shapes = [  ]
+7/z_index = 1
+8/name = "bg.png 8"
+8/texture = ExtResource( 23 )
+8/tex_offset = Vector2( 0, 0 )
+8/modulate = Color( 1, 1, 1, 1 )
+8/region = Rect2( 0, 0, 256, 256 )
+8/tile_mode = 0
+8/occluder_offset = Vector2( 0, 0 )
+8/navigation_offset = Vector2( 0, 0 )
+8/shape_offset = Vector2( 0, 0 )
+8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+8/shape_one_way = false
+8/shape_one_way_margin = 0.0
+8/shapes = [  ]
+8/z_index = 0
+9/name = "land_17.png 9"
+9/texture = ExtResource( 22 )
+9/tex_offset = Vector2( 0, 0 )
+9/modulate = Color( 1, 1, 1, 1 )
+9/region = Rect2( 0, 0, 256, 256 )
+9/tile_mode = 0
+9/occluder_offset = Vector2( 0, 0 )
+9/navigation_offset = Vector2( 0, 0 )
+9/shape_offset = Vector2( 0, 0 )
+9/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+9/shape_one_way = false
+9/shape_one_way_margin = 0.0
+9/shapes = [  ]
+9/z_index = 0
+10/name = "land_13.png 10"
+10/texture = ExtResource( 21 )
+10/tex_offset = Vector2( 0, 0 )
+10/modulate = Color( 1, 1, 1, 1 )
+10/region = Rect2( 0, 0, 256, 256 )
+10/tile_mode = 0
+10/occluder_offset = Vector2( 0, 0 )
+10/navigation_offset = Vector2( 0, 0 )
+10/shape_offset = Vector2( 0, 0 )
+10/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+10/shape_one_way = false
+10/shape_one_way_margin = 0.0
+10/shapes = [  ]
+10/z_index = 0
+11/name = "land_14.png 11"
+11/texture = ExtResource( 19 )
+11/tex_offset = Vector2( 0, 0 )
+11/modulate = Color( 1, 1, 1, 1 )
+11/region = Rect2( 0, 0, 256, 256 )
+11/tile_mode = 0
+11/occluder_offset = Vector2( 0, 0 )
+11/navigation_offset = Vector2( 0, 0 )
+11/shape_offset = Vector2( 0, 0 )
+11/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+11/shape_one_way = false
+11/shape_one_way_margin = 0.0
+11/shapes = [  ]
+11/z_index = 0
+12/name = "greenery_1.png 12"
+12/texture = ExtResource( 24 )
+12/tex_offset = Vector2( 0, 0 )
+12/modulate = Color( 1, 1, 1, 1 )
+12/region = Rect2( 0, 0, 114, 300 )
+12/tile_mode = 0
+12/occluder_offset = Vector2( 0, 0 )
+12/navigation_offset = Vector2( 0, 0 )
+12/shape_offset = Vector2( 0, 0 )
+12/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+12/shape_one_way = false
+12/shape_one_way_margin = 0.0
+12/shapes = [  ]
+12/z_index = 0
+13/name = "greenery_6.png 13"
+13/texture = ExtResource( 20 )
+13/tex_offset = Vector2( 0, 0 )
+13/modulate = Color( 1, 1, 1, 1 )
+13/region = Rect2( 0, 0, 88, 80 )
+13/tile_mode = 0
+13/occluder_offset = Vector2( 0, 0 )
+13/navigation_offset = Vector2( 0, 0 )
+13/shape_offset = Vector2( 0, 0 )
+13/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+13/shape_one_way = false
+13/shape_one_way_margin = 0.0
+13/shapes = [  ]
+13/z_index = 0
+
+[sub_resource type="DynamicFontData" id=2]
+font_path = "res://Assets/fonts/Planes_ValMore.ttf"
+
+[sub_resource type="DynamicFont" id=3]
+size = 36
+font_data = SubResource( 2 )
+
+[sub_resource type="DynamicFontData" id=4]
+font_path = "res://Assets/fonts/Planes_ValMore.ttf"
+
+[sub_resource type="DynamicFont" id=5]
+size = 42
+font_data = SubResource( 4 )
+
+[node name="Map" type="Node2D"]
+script = ExtResource( 10 )
+
+[node name="TileMap" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( -393232, 4, 0, -393228, 4, 0, -393224, 4, 0, -393220, 4, 0, -458752, 4, 0, -458748, 2, 0, -458747, 5, 0, -458744, 3, 0, -458743, 5, 0, -458740, 1, 0, -131091, 5, 0, -131087, 5, 0, -131083, 5, 0, -131079, 5, 0, -131075, 5, 0, -196607, 5, 0, -196604, 3, 0, -196603, 5, 0, -196599, 5, 0, -196595, 5, 0, 131053, 5, 0, 131056, 3, 0, 131057, 5, 0, 131060, 3, 0, 131061, 5, 0, 131064, 3, 0, 131065, 5, 0, 131068, 3, 0, 131069, 5, 0, 65536, 3, 0, 65537, 5, 0, 65540, 3, 0, 65541, 5, 0, 65544, 3, 0, 65545, 5, 0, 65548, 3, 0, 65549, 5, 0, 393197, 5, 0, 393200, 3, 0, 393201, 5, 0, 393204, 3, 0, 393205, 5, 0, 393209, 5, 0, 393213, 5, 0, 327681, 5, 0, 327685, 5, 0, 327688, 3, 0, 327689, 5, 0, 327692, 3, 0, 327693, 5, 0, 655341, 5, 0, 655344, 3, 0, 655345, 5, 0, 655348, 3, 0, 655349, 5, 0, 655353, 5, 0, 655357, 5, 0, 589825, 5, 0, 589829, 5, 0, 589832, 3, 0, 589833, 5, 0, 589836, 3, 0, 589837, 5, 0, 917485, 5, 0, 917488, 3, 0, 917489, 5, 0, 917492, 3, 0, 917493, 5, 0, 917496, 3, 0, 917497, 5, 0, 917500, 3, 0, 917501, 5, 0, 851968, 3, 0, 851969, 5, 0, 851972, 3, 0, 851973, 5, 0, 851976, 3, 0, 851977, 5, 0, 851980, 3, 0, 851981, 5, 0, 983024, 4, 0, 983028, 4, 0, 983032, 4, 0, 983036, 4, 0, 917504, 4, 0, 917508, 4, 0, 917512, 4, 0, 917516, 4, 0 )
+
+[node name="TileMap2" type="TileMap" parent="."]
+tile_set = SubResource( 1 )
+format = 1
+tile_data = PoolIntArray( -262139, 6, 0, -131088, 7, 0, -196593, 7, 0, -65552, 7, 0, -131057, 7, 0, 65526, 6, 0, 196592, 7, 0, 131087, 7, 0, 458736, 7, 0, 393231, 7, 0, 720880, 7, 0, 655375, 7, 0, 720903, 6, 0 )
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Menu" parent="." instance=ExtResource( 13 )]
+margin_left = -400.0
+margin_top = 2.0
+margin_right = -399.744
+margin_bottom = 2.0
+
+[node name="player" parent="." instance=ExtResource( 4 )]
+position = Vector2( -820.509, 347.908 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2( 0, 350 )
+current = true
+zoom = Vector2( 2, 2 )
+
+[node name="dialogBox" parent="." instance=ExtResource( 8 )]
+margin_left = -400.303
+margin_top = 472.439
+margin_right = 399.697
+margin_bottom = 772.439
+
+[node name="enemy" parent="." instance=ExtResource( 11 )]
+visible = false
+position = Vector2( 643.393, -475.203 )
+
+[node name="dialogBattle" parent="." instance=ExtResource( 12 )]
+visible = false
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_left = -380.991
+margin_top = 27.0
+margin_right = 375.009
+margin_bottom = 347.0
+
+[node name="Equip" parent="." instance=ExtResource( 14 )]
+margin_left = -400.0
+margin_top = 2.0
+margin_right = -400.0
+margin_bottom = 2.0
+
+[node name="Stats" parent="." instance=ExtResource( 15 )]
+margin_left = -300.0
+margin_right = -300.0
+script = ExtResource( 16 )
+
+[node name="boss" parent="." instance=ExtResource( 7 )]
+position = Vector2( 796.948, 379.107 )
+
+[node name="Delete" parent="." instance=ExtResource( 17 )]
+margin_left = 753.752
+margin_top = 838.059
+margin_right = 753.752
+margin_bottom = 838.059
+script = ExtResource( 18 )
+
+[node name="Soundtrack" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 25 )
+
+[node name="Soundtrack2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 26 )
+
+[node name="AttackAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 27 )
+pitch_scale = 3.5
+
+[node name="MusicVol" type="Label" parent="."]
+margin_left = -898.0
+margin_top = -190.0
+margin_right = -802.0
+margin_bottom = -154.0
+custom_fonts/font = SubResource( 3 )
+text = "Music"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Minus" type="Button" parent="MusicVol"]
+margin_left = -52.0
+margin_top = -1.0
+margin_right = -7.0
+margin_bottom = 48.0
+custom_fonts/font = SubResource( 5 )
+text = "-"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="More" type="Button" parent="MusicVol"]
+margin_left = 101.978
+margin_top = -1.7937
+margin_right = 146.978
+margin_bottom = 47.2063
+custom_fonts/font = SubResource( 5 )
+text = "+"
+flat = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="attQtd" from="." to="player" method="_on_Map_attQtd"]
+[connection signal="attQtd" from="." to="Equip" method="_on_Map_attQtd"]
+[connection signal="menuEquip" from="." to="Equip" method="_on_Map_menuEquip"]
+[connection signal="points" from="." to="Stats" method="_on_Map_points"]
+[connection signal="start_boss" from="." to="boss" method="_on_Map_start_boss"]
+[connection signal="start_enemy" from="." to="enemy" method="_on_start_enemy"]
+[connection signal="batalha" from="enemy" to="." method="_on_enemy_batalha"]
+[connection signal="menu" from="Equip" to="Menu" method="_on_Equip_menu"]
+[connection signal="batalha" from="boss" to="." method="_on_enemy_batalha"]
+[connection signal="delete_save" from="Delete" to="." method="_on_Delete_save"]
+[connection signal="finished" from="Soundtrack" to="." method="_on_Soundtrack_finished"]
+[connection signal="finished" from="Soundtrack2" to="." method="_on_Soundtrack2_finished"]
+[connection signal="finished" from="AttackAudio" to="." method="_on_Attack_Audio_finished"]
+[connection signal="pressed" from="MusicVol/Minus" to="." method="_on_Minus_pressed"]
+[connection signal="pressed" from="MusicVol/More" to="." method="_on_More_pressed"]

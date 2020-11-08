@@ -1,0 +1,296 @@
+[gd_scene load_steps=112 format=2]
+
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_001.png" type="Texture" id=1]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_006.png" type="Texture" id=2]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_005.png" type="Texture" id=3]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_004.png" type="Texture" id=4]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_003.png" type="Texture" id=5]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_002.png" type="Texture" id=6]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_000.png" type="Texture" id=7]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_021.png" type="Texture" id=8]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_029.png" type="Texture" id=9]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_027.png" type="Texture" id=10]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_028.png" type="Texture" id=11]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_011.png" type="Texture" id=12]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_010.png" type="Texture" id=13]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_012.png" type="Texture" id=14]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_007.png" type="Texture" id=15]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_019.png" type="Texture" id=16]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_009.png" type="Texture" id=17]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_008.png" type="Texture" id=18]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_026.png" type="Texture" id=19]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_014.png" type="Texture" id=20]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_013.png" type="Texture" id=21]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_023.png" type="Texture" id=22]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_015.png" type="Texture" id=23]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_017.png" type="Texture" id=24]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_016.png" type="Texture" id=25]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_020.png" type="Texture" id=26]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_025.png" type="Texture" id=27]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_022.png" type="Texture" id=28]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_024.png" type="Texture" id=29]
+[ext_resource path="res://Assets/player/right/Idle/0_Warrior_Idle_018.png" type="Texture" id=30]
+[ext_resource path="res://scripts/player.gd" type="Script" id=31]
+[ext_resource path="res://Cenas/FloatyText.tscn" type="PackedScene" id=32]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_005.png" type="Texture" id=33]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_006.png" type="Texture" id=34]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_013.png" type="Texture" id=35]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_011.png" type="Texture" id=36]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_008.png" type="Texture" id=37]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_004.png" type="Texture" id=38]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_002.png" type="Texture" id=39]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_006.png" type="Texture" id=40]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_008.png" type="Texture" id=41]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_003.png" type="Texture" id=42]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_005.png" type="Texture" id=43]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_002.png" type="Texture" id=44]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_002.png" type="Texture" id=45]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_009.png" type="Texture" id=46]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_010.png" type="Texture" id=47]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_012.png" type="Texture" id=48]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_001.png" type="Texture" id=49]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_007.png" type="Texture" id=50]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_007.png" type="Texture" id=51]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_008.png" type="Texture" id=52]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_011.png" type="Texture" id=53]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_009.png" type="Texture" id=54]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_010.png" type="Texture" id=55]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_012.png" type="Texture" id=56]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_003.png" type="Texture" id=57]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_004.png" type="Texture" id=58]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_005.png" type="Texture" id=59]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_006.png" type="Texture" id=60]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_013.png" type="Texture" id=61]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_014.png" type="Texture" id=62]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_012.png" type="Texture" id=63]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_011.png" type="Texture" id=64]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_010.png" type="Texture" id=65]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_007.png" type="Texture" id=66]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_003.png" type="Texture" id=67]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_002.png" type="Texture" id=68]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_009.png" type="Texture" id=69]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_001.png" type="Texture" id=70]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_004.png" type="Texture" id=71]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_007.png" type="Texture" id=72]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_005.png" type="Texture" id=73]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_006.png" type="Texture" id=74]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_008.png" type="Texture" id=75]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_009.png" type="Texture" id=76]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_010.png" type="Texture" id=77]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_011.png" type="Texture" id=78]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_012.png" type="Texture" id=79]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_013.png" type="Texture" id=80]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_014.png" type="Texture" id=81]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_015.png" type="Texture" id=82]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_016.png" type="Texture" id=83]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_019.png" type="Texture" id=84]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_017.png" type="Texture" id=85]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_020.png" type="Texture" id=86]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_001.png" type="Texture" id=87]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_001.png" type="Texture" id=88]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_004.png" type="Texture" id=89]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_003.png" type="Texture" id=90]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_000.png" type="Texture" id=91]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_000.png" type="Texture" id=92]
+[ext_resource path="res://Assets/player/right/Attack_1/0_Warrior_Attack_1_014.png" type="Texture" id=93]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_000.png" type="Texture" id=94]
+[ext_resource path="res://Assets/player/right/Attack_2/0_Warrior_Attack_2_000.png" type="Texture" id=95]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_018.png" type="Texture" id=96]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_021.png" type="Texture" id=97]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_022.png" type="Texture" id=98]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_023.png" type="Texture" id=99]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_024.png" type="Texture" id=100]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_025.png" type="Texture" id=101]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_026.png" type="Texture" id=102]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_027.png" type="Texture" id=103]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_028.png" type="Texture" id=104]
+[ext_resource path="res://Assets/player/right/Died/0_Warrior_Died_029.png" type="Texture" id=105]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_013.png" type="Texture" id=106]
+[ext_resource path="res://Assets/player/right/Hurt/0_Warrior_Hurt_014.png" type="Texture" id=107]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 7 ), ExtResource( 1 ), ExtResource( 6 ), ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 15 ), ExtResource( 18 ), ExtResource( 17 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 21 ), ExtResource( 20 ), ExtResource( 23 ), ExtResource( 25 ), ExtResource( 24 ), ExtResource( 30 ), ExtResource( 16 ), ExtResource( 26 ), ExtResource( 8 ), ExtResource( 28 ), ExtResource( 22 ), ExtResource( 29 ), ExtResource( 27 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 11 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "idle",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 92 ), ExtResource( 88 ), ExtResource( 45 ), ExtResource( 42 ), ExtResource( 38 ), ExtResource( 43 ), ExtResource( 40 ), ExtResource( 66 ), ExtResource( 37 ), ExtResource( 69 ), ExtResource( 65 ), ExtResource( 64 ), ExtResource( 63 ), ExtResource( 106 ), ExtResource( 107 ) ],
+"loop": true,
+"name": "hurt",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 94 ), ExtResource( 70 ), ExtResource( 68 ), ExtResource( 67 ), ExtResource( 71 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 72 ), ExtResource( 75 ), ExtResource( 76 ), ExtResource( 77 ), ExtResource( 78 ), ExtResource( 79 ), ExtResource( 80 ), ExtResource( 81 ), ExtResource( 82 ), ExtResource( 83 ), ExtResource( 85 ), ExtResource( 96 ), ExtResource( 84 ), ExtResource( 86 ), ExtResource( 97 ), ExtResource( 98 ), ExtResource( 99 ), ExtResource( 100 ), ExtResource( 101 ), ExtResource( 102 ), ExtResource( 103 ), ExtResource( 104 ), ExtResource( 105 ) ],
+"loop": true,
+"name": "dead",
+"speed": 10.0
+}, {
+"frames": [ ExtResource( 95 ), ExtResource( 49 ), ExtResource( 44 ), ExtResource( 57 ), ExtResource( 58 ), ExtResource( 59 ), ExtResource( 60 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 54 ), ExtResource( 55 ), ExtResource( 53 ), ExtResource( 56 ), ExtResource( 61 ), ExtResource( 62 ) ],
+"loop": true,
+"name": "attack2",
+"speed": 12.0
+}, {
+"frames": [ ExtResource( 91 ), ExtResource( 87 ), ExtResource( 39 ), ExtResource( 90 ), ExtResource( 89 ), ExtResource( 33 ), ExtResource( 34 ), ExtResource( 50 ), ExtResource( 41 ), ExtResource( 46 ), ExtResource( 47 ), ExtResource( 36 ), ExtResource( 48 ), ExtResource( 35 ), ExtResource( 93 ) ],
+"loop": true,
+"name": "attack1",
+"speed": 12.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 23.9369, 2.84771 )
+
+[sub_resource type="DynamicFontData" id=3]
+font_path = "res://Assets/fonts/Planes_ValMore.ttf"
+
+[sub_resource type="DynamicFont" id=4]
+size = 32
+font_data = SubResource( 3 )
+
+[node name="player" type="KinematicBody2D"]
+script = ExtResource( 31 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+scale = Vector2( 0.2, 0.2 )
+frames = SubResource( 1 )
+animation = "idle"
+frame = 17
+playing = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( -2.80618, 57.2456 )
+shape = SubResource( 2 )
+
+[node name="Stats" type="VBoxContainer" parent="."]
+margin_left = -110.508
+margin_top = 120.0
+margin_right = 134.492
+margin_bottom = 548.0
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Level" type="Label" parent="Stats"]
+margin_right = 245.0
+margin_bottom = 32.0
+custom_fonts/font = SubResource( 4 )
+text = "Level:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Experience" type="Label" parent="Stats"]
+margin_top = 36.0
+margin_right = 245.0
+margin_bottom = 68.0
+custom_fonts/font = SubResource( 4 )
+text = "Experience:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="HP" type="Label" parent="Stats"]
+margin_top = 72.0
+margin_right = 245.0
+margin_bottom = 104.0
+custom_fonts/font = SubResource( 4 )
+text = "HP:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Attack" type="Label" parent="Stats"]
+margin_top = 108.0
+margin_right = 245.0
+margin_bottom = 140.0
+custom_fonts/font = SubResource( 4 )
+text = "Attack:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Defense" type="Label" parent="Stats"]
+margin_top = 144.0
+margin_right = 245.0
+margin_bottom = 176.0
+custom_fonts/font = SubResource( 4 )
+text = "Defense:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Agility" type="Label" parent="Stats"]
+margin_top = 180.0
+margin_right = 245.0
+margin_bottom = 212.0
+custom_fonts/font = SubResource( 4 )
+text = "Agility:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Critical" type="Label" parent="Stats"]
+margin_top = 216.0
+margin_right = 245.0
+margin_bottom = 248.0
+custom_fonts/font = SubResource( 4 )
+text = "Critical:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Wisdom" type="Label" parent="Stats"]
+margin_top = 252.0
+margin_right = 245.0
+margin_bottom = 284.0
+custom_fonts/font = SubResource( 4 )
+text = "Wisdom:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Critical Resis" type="Label" parent="Stats"]
+margin_top = 288.0
+margin_right = 245.0
+margin_bottom = 320.0
+custom_fonts/font = SubResource( 4 )
+text = "Critical Resis:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Critical Damage" type="Label" parent="Stats"]
+margin_top = 324.0
+margin_right = 245.0
+margin_bottom = 356.0
+custom_fonts/font = SubResource( 4 )
+text = "Critical Damage:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Damage Reflect" type="Label" parent="Stats"]
+margin_top = 360.0
+margin_right = 245.0
+margin_bottom = 392.0
+custom_fonts/font = SubResource( 4 )
+text = "Damage Reflect:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="Life Leecher" type="Label" parent="Stats"]
+margin_top = 396.0
+margin_right = 245.0
+margin_bottom = 428.0
+custom_fonts/font = SubResource( 4 )
+text = "Life Leecher:"
+__meta__ = {
+"_editor_description_": ""
+}
+
+[node name="FloatyText" parent="." instance=ExtResource( 32 )]
+position = Vector2( -67.734, -81.6862 )
+
+[node name="FloatyText2" parent="." instance=ExtResource( 32 )]
+position = Vector2( 8.54743, -92.2809 )
